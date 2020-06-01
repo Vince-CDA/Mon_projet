@@ -1,0 +1,43 @@
+@font-face{
+    font-family: ardleyshandregular;
+    src: url("/font/ardleyshandregular.ttf");
+}
+body{
+    background-color: #fff2d6;
+}
+header{
+    background-image: url("/img/banner.png");
+    margin: auto;
+    width: 500px;
+    height: 164px;
+    background-repeat: no-repeat;
+}
+#menu h2{
+    display: none;
+}
+#menu li{
+    display: inline;
+    margin-left: 3px;
+}
+#contenuprincipal{
+    margin: auto;
+    width: 600px;
+    text-align: justify;
+}
+#contenuprincipal li{
+color: darkred;
+}
+footer{
+    font-family: ardleyshandregular;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    font-size: smaller;
+    color: #fff2d6;
+    background-color: #333333;
+}
+h1{
+    text-align: center;
+    font-weight: normal;
+}
