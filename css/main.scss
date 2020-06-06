@@ -7,7 +7,7 @@ body{
 }
 header{
   background: {
-    image: url("/img/banner.png");
+    image: url("../img/banner.png");
     repeat: no-repeat;
   }
   margin: auto;
@@ -15,9 +15,6 @@ header{
   height: 164px;
 }
 #menu{
-  & h2 {
-    display: none;
-  }
   & li {
     display: inline;
     margin-left: 3px;
@@ -35,7 +32,6 @@ header{
     color: darkred;
   }
 }
-
 footer{
   font-family: ardleyshandregular;
   border-radius: 20px;
