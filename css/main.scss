@@ -42,3 +42,56 @@ footer{
   color: #fff2d6;
   background-color: #333333;
 }
+
+/*--------------------------------------------------------Code pour format de tablette--------------------------------------------------------*/
+
+@media(min-width: 768px) and (max-width: 1388px)
+{
+  header{
+    background: {
+      image: url("../img/banner.png");
+      repeat: no-repeat;
+    }
+    margin: auto;
+    width: 500px;
+    height: 164px;
+  }
+}
+
+
+/*-------------------------------------------------------Code pour format de smartphone-------------------------------------------------------*/
+
+@media(max-width: 767px)
+{
+  header{
+    background: {
+      image: url("../img/banner.png");
+      repeat: no-repeat;
+    }
+    margin: auto;
+    width: 300px;
+    height: 164px;
+  }
+  #contenuprincipal{
+    margin: auto;
+    width: 300px;
+    text-align: justify;
+    & h1 {
+      text-align: center;
+      font-weight: normal;
+    }
+    & li {
+      color: darkred;
+    }
+  }
+  footer{
+    font-family: ardleyshandregular;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    font-size: smaller;
+    color: #fff2d6;
+    background-color: #333333;
+  }
+}

@@ -43,4 +43,41 @@ footer {
   background-color: #333333;
 }
 
+/*--------------------------------------------------------Code pour format de tablette--------------------------------------------------------*/
+/*same*/
+/*-------------------------------------------------------Code pour format de smartphone-------------------------------------------------------*/
+@media (max-width: 767px) {
+  header {
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 300px;
+    height: 82px;
+  }
+
+  #contenuprincipal {
+    margin: auto;
+    width: 300px;
+    text-align: justify;
+  }
+  #contenuprincipal h1 {
+    text-align: center;
+    font-weight: normal;
+  }
+  #contenuprincipal li {
+    color: darkred;
+  }
+
+  footer {
+    font-family: ardleyshandregular;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    font-size: smaller;
+    color: #fff2d6;
+    background-color: #333333;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
