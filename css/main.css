@@ -1,11 +1,70 @@
-@font-face {
-  font-family: ardleyshandregular;
-  src: url("/font/ardleyshandregular.ttf");
-}
-body {
-  background-color: #fff2d6;
+/*-------------------------------------------------------Code pour bulle popup-------------------------------------------------------*/
+/* Popup container */
+/* line 5, ../../../Documents/Git/Mon_projet/scss/_popup.scss */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
+/* The actual popup (appears on top) */
+/* line 12, ../../../Documents/Git/Mon_projet/scss/_popup.scss */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+/* line 28, ../../../Documents/Git/Mon_projet/scss/_popup.scss */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+/* line 40, ../../../Documents/Git/Mon_projet/scss/_popup.scss */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 1, ../../../Documents/Git/Mon_projet/scss/_header.scss */
 header {
   background-image: url("../img/banner.png");
   background-repeat: no-repeat;
@@ -14,24 +73,13 @@ header {
   height: 164px;
 }
 
+/* line 12, ../../../Documents/Git/Mon_projet/scss/_header.scss */
 #menu li {
   display: inline;
   margin-left: 3px;
 }
 
-#contenuprincipal {
-  margin: auto;
-  width: 600px;
-  text-align: justify;
-}
-#contenuprincipal h1 {
-  text-align: center;
-  font-weight: normal;
-}
-#contenuprincipal li {
-  color: darkred;
-}
-
+/* line 1, ../../../Documents/Git/Mon_projet/scss/_footer.scss */
 footer {
   font-family: ardleyshandregular;
   border-radius: 20px;
@@ -43,48 +91,39 @@ footer {
   background-color: #333333;
 }
 
-/*--------------------------------------------------------Code pour format de tablette--------------------------------------------------------*/
-@media (min-width: 768px) and (max-width: 1388px) {
-  header {
-    background-image: url("../img/banner.png");
-    background-repeat: no-repeat;
-    margin: auto;
-    width: 500px;
-    height: 164px;
-  }
+@font-face {
+  font-family: ardleyshandregular;
+  src: url("../font/ardleyshandregular.ttf");
 }
+
+/* line 10, ../../../Documents/Git/Mon_projet/scss/main.scss */
+body {
+  background-color: #fff2d6;
+}
+
+/* line 15, ../../../Documents/Git/Mon_projet/scss/main.scss */
+#contenuprincipal {
+  margin: auto;
+  width: 600px;
+  text-align: justify;
+}
+
+/* line 19, ../../../Documents/Git/Mon_projet/scss/main.scss */
+#contenuprincipal h1 {
+  text-align: center;
+  font-weight: normal;
+}
+
+/* line 23, ../../../Documents/Git/Mon_projet/scss/main.scss */
+#contenuprincipal li {
+  color: darkred;
+}
+
 /*-------------------------------------------------------Code pour format de smartphone-------------------------------------------------------*/
 @media (max-width: 767px) {
-  header {
-    background-image: url("../img/banner.png");
-    background-repeat: no-repeat;
-    margin: auto;
-    width: 520px;
-    height: 164px;
-  }
-
+  /* line 32, ../../../Documents/Git/Mon_projet/scss/main.scss */
   #contenuprincipal {
-    margin: auto;
     width: 500px;
-    text-align: justify;
-  }
-  #contenuprincipal h1 {
-    text-align: center;
-    font-weight: normal;
-  }
-  #contenuprincipal li {
-    color: darkred;
-  }
-
-  footer {
-    font-family: ardleyshandregular;
-    border-radius: 20px;
-    margin: auto;
-    text-align: center;
-    width: 510px;
-    font-size: smaller;
-    color: #fff2d6;
-    background-color: #333333;
   }
 }
 

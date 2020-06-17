@@ -1,0 +1,16 @@
+header{
+  background: {
+    image: url("../img/banner.png");
+    repeat: no-repeat;
+  }
+  margin: auto;
+  width: $width1;
+  height: 164px;
+}
+
+#menu{
+  li {
+    display: inline;
+    margin-left: 3px;
+  }
+}

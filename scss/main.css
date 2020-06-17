@@ -1,38 +1,38 @@
-@font-face{
+@font-face {
   font-family: ardleyshandregular;
   src: url("/font/ardleyshandregular.ttf");
 }
-body{
+body {
   background-color: #fff2d6;
 }
-header{
-  background: {
-    image: url("../img/banner.png");
-    repeat: no-repeat;
-  }
+
+header {
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
   margin: auto;
   width: 500px;
   height: 164px;
 }
-#menu{
-  & li {
-    display: inline;
-    margin-left: 3px;
-  }
+
+#menu li {
+  display: inline;
+  margin-left: 3px;
 }
-#contenuprincipal{
+
+#contenuprincipal {
   margin: auto;
   width: 600px;
   text-align: justify;
-  & h1 {
-    text-align: center;
-    font-weight: normal;
-  }
-  & li {
-    color: darkred;
-  }
 }
-footer{
+#contenuprincipal h1 {
+  text-align: center;
+  font-weight: normal;
+}
+#contenuprincipal li {
+  color: darkred;
+}
+
+footer {
   font-family: ardleyshandregular;
   border-radius: 20px;
   margin: auto;
@@ -44,54 +44,48 @@ footer{
 }
 
 /*--------------------------------------------------------Code pour format de tablette--------------------------------------------------------*/
-
-@media(min-width: 768px) and (max-width: 1388px)
-{
-  header{
-    background: {
-      image: url("../img/banner.png");
-      repeat: no-repeat;
-    }
+@media (min-width: 768px) and (max-width: 1388px) {
+  header {
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
     margin: auto;
     width: 500px;
     height: 164px;
   }
 }
-
-
 /*-------------------------------------------------------Code pour format de smartphone-------------------------------------------------------*/
-
-@media(max-width: 767px)
-{
-  header{
-    background: {
-      image: url("../img/banner.png");
-      repeat: no-repeat;
-    }
+@media (max-width: 767px) {
+  header {
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
     margin: auto;
-    width: 300px;
+    width: 520px;
     height: 164px;
   }
-  #contenuprincipal{
+
+  #contenuprincipal {
     margin: auto;
-    width: 300px;
+    width: 500px;
     text-align: justify;
-    & h1 {
-      text-align: center;
-      font-weight: normal;
-    }
-    & li {
-      color: darkred;
-    }
   }
-  footer{
+  #contenuprincipal h1 {
+    text-align: center;
+    font-weight: normal;
+  }
+  #contenuprincipal li {
+    color: darkred;
+  }
+
+  footer {
     font-family: ardleyshandregular;
     border-radius: 20px;
     margin: auto;
     text-align: center;
-    width: 300px;
+    width: 510px;
     font-size: smaller;
     color: #fff2d6;
     background-color: #333333;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

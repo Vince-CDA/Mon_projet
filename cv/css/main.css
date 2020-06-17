@@ -1,0 +1,41 @@
+a {
+    color: #BD5D38; }
+a:hover, a:focus, a:active {
+    color: #824027; }
+li img, h2 img {
+    float: right;
+}
+img {
+    float: bottom;
+}
+.blue {
+    color: #713100;
+}
+
+#git {
+    float : right;
+    width: 80px;
+}
+
+.resume-section {
+    font-size: 28px;
+}
+
+#ici {
+    color: darkblue;
+}
+
+.subheading {
+    font-size: 2.25rem; }
+
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem; }
+h3 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 4rem; }
+h5 {
+    font-size: 2.5rem;
+}

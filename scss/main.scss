@@ -1,0 +1,36 @@
+@import "config";
+@import "popup.scss";
+@import "header.scss";
+@import "footer.scss";
+
+@font-face{
+  font-family: ardleyshandregular;
+  src: url("../font/ardleyshandregular.ttf");
+}
+body{
+  background-color: $color1;
+}
+
+
+#contenuprincipal{
+  margin: auto;
+  width: 600px;
+  text-align: justify;
+  h1 {
+    text-align: center;
+    font-weight: normal;
+  }
+  li {
+    color: darkred;
+  }
+}
+
+
+/*-------------------------------------------------------Code pour format de smartphone-------------------------------------------------------*/
+
+@media (max-width: 767px) {
+  #contenuprincipal {
+    width: $width1;
+  }
+  }
+
